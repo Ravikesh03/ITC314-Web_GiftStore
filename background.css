@@ -1,0 +1,49 @@
+/* Modern Background Styles */
+body {
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 50%, #f8f9fa 100%);
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+/* Optional: Subtle background image overlay */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  opacity: 0.03;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.wrapper h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 20px 0;
+  color: #2c3e50;
+}
+
+.wrapper h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 20px 0;
+  color: #555;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
